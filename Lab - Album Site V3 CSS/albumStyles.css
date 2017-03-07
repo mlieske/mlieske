@@ -1,0 +1,17 @@
+/* This CSS goes with Lab - Album page V3 */
+tr {
+	text-align: center;
+}
+
+.centered {
+	text-align: center;
+}
+
+table {
+	width: 100%;
+}
+
+table, td, th {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
