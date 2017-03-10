@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link href = "restaurantStyles.css" rel = "stylesheet" type = "text/css"/>
+	<style>
+
+		form div {
+			position: relative;
+		}
+		input.aligned, select, textarea {
+			margin-left: 300px;
+		} 
+		form div label {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		}
+	</style>
+</head>
+<body>
+		<h1>Generic Foods</h1>
+	<div>
+		<hr/>
+		<a class = "menu" href = "Home Page.html">Home</a>
+		<a class = "menu" href = "Menu Page2.html">Menu</a>
+		<a class = "menu" href = "Contact Us Page.html">Contact Us</a>
+		<hr/>
+	</div>
+	<br/>
+	<div>
+	<form action = "fakeurl" method = "POST">
+		<div>
+				<label for = "Name">Name:</label>
+				<input class = "aligned" type = "text" name = "Name" size = "25"/><br/>
+		</div>
+		<div>
+				<label for = "Email">Email:</label>
+				<input class = "aligned" type = "text" name = "Email" size = "25"/><br/>
+		</div>
+		<div>
+				<label for = "Phone">Phone:</label>
+				<input class = "aligned" type = "text" name = "Phone" size = "25"/><br/>
+		</div>
+		<div>
+				<label for = "Reason">Reason for Inquiry:</label>
+				<select name = "Reason">
+					<option value = "Catering">Catering&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</option>
+					<option value = "Private Party">Private Party</option>
+					<option value = "Feedback">Feedback</option>
+					<option value = "Other">Other</option>
+				</select><br/>
+		</div>
+		<div>
+				<label for = "Additional Information">Additional Information:</label>
+				<textarea = "Additional Information" cols = "20"></textarea><br/>
+		</div>
+		<div>
+				<label for = "BeenToRestaurant">Have you been to the restaurant?</label>
+					<input class = "aligned" type = "radio" name = "BeenToRestaurant" value = "No" checked/>No
+					<input type = "radio" name = "BeenToRestaurant" value = "Yes"/>Yes<br/>
+		</div>
+		<div>
+				<label for = "DaysToContact">Best days to contact you:</label>
+					<input class = "aligned" type = "checkbox" name = "DaysToContact" value = "Monday"/>M
+					<input type = "checkbox" name = "DaysToContact" value = "Tuesday"/>T
+					<input type = "checkbox" name = "DaysToContact" value = "Wednesday"/>W
+					<input type = "checkbox" name = "DaysToContact" value = "Thursday"/>Th	
+					<input type = "checkbox" name = "DaysToContact" value = "Friday"/>F<br/>
+		</div>
+		<div>
+				<input class = "aligned" type = "submit" value = "Send Request"/>
+		</div>
+	</form>
+	</div>
+	<div class = "footer">
+		<hr/>
+			<p>123 Tomato Street, Minneapolis, MN 55419</p>
+			<p>612-555-5555</p>
+	</div>
+
+</body>
+</html>
