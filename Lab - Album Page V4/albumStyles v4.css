@@ -1,0 +1,43 @@
+/* This CSS goes with Lab - Album page V4 */
+.newfont {
+	font-family: 'Griffy', cursive;
+}
+
+/*@font-face {
+	font-family: myfont;
+	src: URL(https://fonts.googleapis.com/css?family=griffy);
+}
+h1, h2 {
+	font-family: myfont;
+}*/
+
+.centered {
+	text-align: center;
+}
+
+table {
+	width: 80%;
+	margin: auto;
+}
+
+table, td, th {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+tr {
+	text-align: center;
+}
+
+ul { margin-left: 10%; }
+
+li {
+	font-style: italic;
+}
+.albumcover {
+	height: 300px;
+	width: 300px;
+	margin: auto;
+	background-size: cover;
+	background-image: url("white blood cells.jpg");
+}
