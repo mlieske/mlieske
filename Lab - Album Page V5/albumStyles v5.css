@@ -1,4 +1,4 @@
-/* This CSS goes with Lab - Album page V4 */
+/* This CSS goes with Lab - Album page V5 */
 .newfont {
 	font-family: 'Griffy', cursive;
 }
@@ -18,6 +18,7 @@ h1, h2 {
 table {
 	width: 80%;
 	margin: auto;
+	background-color: RGBA(10,10,100,0.3);
 }
 
 table, td, th {
@@ -31,7 +32,7 @@ tr {
 
 ul { margin-left: 10%; }
 
-li {
+li, td {
 	font-style: italic;
 }
 .albumcover {
@@ -40,4 +41,14 @@ li {
 	margin: auto;
 	background-size: cover;
 	background-image: url("white blood cells.jpg");
+}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration:underline;
+	background-color: red;
+	color: white;
 }
