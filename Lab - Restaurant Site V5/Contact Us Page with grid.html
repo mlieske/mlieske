@@ -1,0 +1,93 @@
+<!--Made this to try to do the contact form with bootstrap, but can't get things to line up vertically, and when the screen gets smaller the right-justified labels move to the right of the screen -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link href = "css/bootstrap.min.css" rel = "stylesheet"/>
+	<link href = "restaurantStyles.css" rel = "stylesheet" type = "text/css" />
+	<style>
+/*		label {
+			text-align: right;
+		} */
+		.col1, .col1Req {
+			text-align: right;
+		}
+		.col1Req {
+			font-weight: bold;
+		}
+		select, input[type=text], textarea {
+			width: 200px;
+		}
+		.col-sm-9 {padding-top: 10px;}
+	</style>
+</head>
+<body>
+		<h1>Generic Foods</h1>
+		<hr/>
+	<ul class = "nav nav-pills">
+		<li><a  class = "menu" href = "Home Page.html"><span class="glyphicon glyphicon-home"></span></a></li>
+		<li><a  class = "menu" href = "Menu Page.html">Menu</a></li>
+		<li><a  class = "menu" href = "Contact Us Page.html">Contact Us</a></li>
+	</ul>
+	<hr/>
+	<br/>
+	<div class = "container">
+	<form action = "fakeurl" method = "POST">
+		<div class = "row">
+			<div class = "col-sm-3 col1Req"><label for = "Name">Name:</label></div>
+			<div class = "col-sm-9"><input type = "text" name = "Name"/></div>
+		</div>
+		<div class = "row">
+				<div class = "col-sm-3 col1Req"><label for = "Email">Email:</label></div>
+				<div class = "col-sm-9"><input type = "text" name = "Email"/></div>
+		</div>
+		<div class = "row">
+				<div class = "col-sm-3 col1Req"><label for = "Phone">Phone:</label></div>
+				<div class = "col-sm-9"><input type = "text" name = "Phone"/></div>
+		</div>
+		<div class = "row">
+				<div class = "col-sm-3 col1Req"><label for = "Reason">Reason for Inquiry:</label></div>
+				<div class = "col-sm-9"><select name = "Reason">
+					<option value = "Catering">Catering</option>
+					<option value = "Private Party">Private Party</option>
+					<option value = "Feedback">Feedback</option>
+					<option value = "Other">Other</option>
+					</select>
+				</div>
+		</div>
+		<div class = "row">
+				<div class = "col-sm-3 col1Req">Additional Information:</div>
+				<div class = "col-sm-9"><textarea = "Additional Information"></textarea></div>
+		</div>
+		<div class = "row">
+				<div class = "col-sm-3 col1Req"><label for = "BeenToRestaurant">Have you been to the restaurant?</label></div>
+				<div class = "col-sm-9">
+					<input type = "radio" name = "BeenToRestaurant" value = "No" checked/>No
+					<input type = "radio" name = "BeenToRestaurant" value = "Yes"/>Yes
+				</div>
+		</div>
+		<div class = "row">
+				<div class = "col-sm-3 col1Req"><label for = "DaysToContact">Best days to contact you:</label></div>
+				<div class = "col-sm-9">
+					<input type = "checkbox" name = "DaysToContact" value = "Monday"/>M
+					<input type = "checkbox" name = "DaysToContact" value = "Tuesday"/>T
+					<input type = "checkbox" name = "DaysToContact" value = "Wednesday"/>W
+					<input type = "checkbox" name = "DaysToContact" value = "Thursday"/>Th	
+					<input type = "checkbox" name = "DaysToContact" value = "Friday"/>F
+				</div>
+		</div>
+		<div class = "row">
+					<div class = "col-sm-3 col1Req"></div>
+					<div class = "col-sm-9"><input type = "submit" value = "Send Request"/></div>
+		</div>
+			
+		</div>
+	</form>
+	<div id = "footer">
+		<hr/>
+			<p>123 Tomato Street, Minneapolis, MN 55419</p>
+			<p>612-555-5555</p>
+	</div>
+  </div>
+</body>
+</html>
