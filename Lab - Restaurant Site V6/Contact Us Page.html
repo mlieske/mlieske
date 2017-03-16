@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel = "stylesheet"/>
+	<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href = "restaurantStyles.css" rel = "stylesheet" type = "text/css" />
+	<style>
+		table {
+			margin-left: 200px;
+
+		}
+		td {
+			padding: 10px;
+			width: 250px;
+		}
+		label {
+			text-align: right;
+		}
+		.col1, .col1Req {
+			text-align: right;
+		}
+		.col1Req {
+			font-weight: bold;
+		}
+		select, input[type=text], textarea {
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+  <div class = "container-fluid">
+		<h1>Generic Foods</h1>
+		<hr/>
+	<ul class = "nav nav-pills">
+		<li><a  class = "menu" href = "Home Page.html"><span class="glyphicon glyphicon-home"></span></a></li>
+		<li><a  class = "menu" href = "Menu Page.html">Menu</a></li>
+		<li><a  class = "menu" href = "Contact Us Page.html">Contact Us</a></li>
+	</ul>
+	<hr/>
+	<br/>
+	<form action = "fakeurl" method = "POST">
+		<table>
+			<tr>
+				<td class = "col1Req"><label for = "Name">Name:</label></td>
+				<td><input type = "text" name = "Name"/></td>
+			</tr>
+			<tr>
+				<td class = "col1Req"><label for = "Email">Email:</label></td>
+				<td><input type = "text" name = "Email"/></td>
+			</tr>
+			<tr>
+				<td class = "col1Req"><label for = "Phone">Phone:</label></td>
+				<td><input type = "text" name = "Phone"/></td>
+			</tr>
+			<tr>
+				<td class = "col1Req"><label for = "Reason">Reason for Inquiry:</label></td>
+				<td><select name = "Reason">
+					<option value = "Catering">Catering</option>
+					<option value = "Private Party">Private Party</option>
+					<option value = "Feedback">Feedback</option>
+					<option value = "Other">Other</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class = "col1">Additional Information:</td>
+				<td><textarea = "Additional Information"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td class = "col1"><label for = "BeenToRestaurant">Have you been to the restaurant?</label></td>
+				<td>
+					<input type = "radio" name = "BeenToRestaurant" value = "No" checked/>No
+					<input type = "radio" name = "BeenToRestaurant" value = "Yes"/>Yes
+				</td>
+			</tr>
+			<tr>
+				<td class = "col1Req"><label for = "DaysToContact">Best days to contact you:</label></td>
+				<td>
+					<input type = "checkbox" name = "DaysToContact" value = "Monday"/>M
+					<input type = "checkbox" name = "DaysToContact" value = "Tuesday"/>T
+					<input type = "checkbox" name = "DaysToContact" value = "Wednesday"/>W
+					<input type = "checkbox" name = "DaysToContact" value = "Thursday"/>Th	
+					<input type = "checkbox" name = "DaysToContact" value = "Friday"/>F
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type = "submit" value = "Send Request"/>
+				</td>
+			</tr>
+			
+		</table>
+	</form>
+	<div id = "footer">
+		<hr/>
+			<p>123 Tomato Street, Minneapolis, MN 55419</p>
+			<p>612-555-5555</p>
+	</div>
+  </div>
+</body>
+</html>

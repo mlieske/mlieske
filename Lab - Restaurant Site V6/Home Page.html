@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel = "stylesheet"/>
+	<link href = "restaurantStyles.css" rel = "stylesheet" type = "text/css"/>
+	<style>
+		.jumbotron {
+			text-align: center;
+			font-size: 22pt;
+			background-color: lightsteelblue;
+		}
+		.nojs {
+			text-align: center;
+			border: 1px solid black;
+			margin: auto;
+			width: 50%;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<h1>Generic Foods</h1>
+	<hr/>
+	<ul class = "nav nav-pills">
+		<li><a  class = "menu" href = "Home Page.html"><span class="glyphicon glyphicon-home"></span></a></li>
+		<li><a  class = "menu" href = "Menu Page.html">Menu</a></li>
+		<li><a  class = "menu" href = "Contact Us Page.html">Contact Us</a></li>
+	</ul>
+	<hr/>
+  <noscript><p class = "nojs">You do not have Javascript enabled.  For best viewing please enable Javascript.</p></noscript><br/>
+  <div class = "container-fluid">
+	<div id = "maincarousel" class = "carousel slide" data-ride = "carousel">
+		<ol class = "carousel-indicators">
+			<li data-target = "#maincarousel" data-slide-to = "0" class = "active"></li>
+			<li data-target = "#maincarousel" data-slide-to = "1"></li>
+			<li data-target = "#maincarousel" data-slide-to = "2"></li>
+		</ol>
+
+		<div class = "carousel-inner" role = "listbox">
+			<div class = "item active">
+				<div class = "jumbotron">Opening a New Location!</div>
+			</div>
+			<div class = "item">
+				<div class = "jumbotron">We're rolling out our seasonal menu, with special options for this season.</div>
+			</div>
+			<div class = "item">
+				<div class = "jumbotron">The Drink of the Month is SG Special Brew.</div>
+			</div>
+		</div>
+
+		<a class = "left carousel-control" href = "#maincarousel" role = "button" data-slide = "prev">
+			<span class = "glyphicon glyphicon-chevron-left" aria-hidden = "true"></span>
+			<span class = "sr-only">Previous</span>
+		</a>
+		<a class = "right carousel-control" href = "#maincarousel" role = "button" data-slide = "next">
+			<span class = "glyphicon glyphicon-chevron-right" aria-hidden = "true"></span>
+			<span class = "sr-only">Next</span>
+		</a>
+    </div>
+  </div>
+    <br/>
+	<div class = "container-fluid">
+		<div class = "mainbg">
+		<br/>
+		<div style = "text-align:center;">
+			<img class = "img-responsive center" style = "width: 400px; height: 200px;" src = "tomatoes3.jpg" alt = "Tomatoes" />
+			</div>
+			<p class = "mainPage">This restaurant is called Generic Foods.  The menu is filled with regular fare that you can find at any restaurant!  Nothing too interesting here, basically some sandwiches with one salad option.  The salad is even made with iceberg lettuce to ensure no nutritional value.  Most entrees are served with something fried, either chips or french fries.</p><br/>
+		</div>
+		<br/>
+		<div id = "footer">
+			<hr/>
+				<p>123 Tomato Street, Minneapolis, MN 55419</p>
+				<p>612-555-5555</p>
+		</div>
+	</div>
+</body>
+</html>
+	
+		
