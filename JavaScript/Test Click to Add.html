@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Click to Add</title>
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel = "stylesheet"/>
+	<script type = "text/javascript">
+		function makeTable() {
+			var num1Value = document.getElementById("num1").value;
+			console.log(num1Value);
+			var num2Value = document.getElementById("num2").value;
+			console.log(num2Value);
+			document.getElementById("addedCol").innerText = Number(num1Value) + Number(num2Value);
+			document.getElementById("subtrCol").innerText = num1Value - num2Value;
+			document.getElementById("multCol").innerText = num1Value * num2Value;
+			document.getElementById("divCol").innerText = num1Value / num2Value;
+			}
+	</script>
+</head>
+<body>
+	<h2 style = "text-align:center">Enter two numbers and click the button</h2><br/>
+	<form style = "text-align: center">
+		<label for = "num1">Number 1</label>
+		<input type = "number" id = "num1"/>
+		<label for = "num2">Number 2</label>
+		<input type = "number" id = "num2"/>
+		<input type = "reset" value = "Click to Clear"/>
+	</form>
+	<br/>
+	<br/>
+	<div style = "text-align:center">
+	<button id = "mainButton" onclick = "makeTable();">Click to show calculations</button>
+	</div>
+	<br/>
+	<br/>
+	<div class = "container">
+	  <div class = "row table-bordered" style = "text-align:center">
+		<div class = "col-sm-3" id = "addedCol"></div>
+		<div class = "col-sm-3" id = "subtrCol"></div>
+		<div class = "col-sm-3" id = "multCol"></div>
+		<div class = "col-sm-3" id = "divCol"></div>
+	  </div>
+	</div>
+</body>
+</html>

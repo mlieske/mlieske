@@ -39,7 +39,8 @@ li, td {
 	height: 300px;
 	width: 300px;
 	margin: auto;
-	background-size: cover;
+	backgroud-repeat: repeat;
+/*	background-size: cover; */
 	background-image: url("white blood cells.jpg");
 }
 

@@ -1,0 +1,82 @@
+<!-- This was printed -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trying some forms</title>
+	<link href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel = "stylesheet"/>
+</head>
+<body>
+	<div class = "container">
+		<h1 style = "text-align:center">Some Various Inputs</h1>
+		<form id = "someInputs" onsubmit = "showOutputs()">
+<!-- text box -->		
+			<div class = "form-group">
+				<label for = "name">Name</label>
+				<input type = "text" class = "form-control"/>
+			</div>
+<!-- checkbox-inline -->		
+			<div class = "form-group">
+				<label for = "items1">Inline checkbox group</label>
+				<label class = "checkbox-inline"><input type = "checkbox" name = "items1" value = "Monday" checked/>Monday</label>
+				<label class = "checkbox-inline"><input type = "checkbox" name = "items1" value = "Wednesday"/>Wednesday</label>
+				<label class = "checkbox-inline"><input type = "checkbox" name = "items1" value = "Friday"/>Friday</label>
+			</div>
+<!-- vertical checkbox -->		
+			<div class = "form-group">
+				<label for = "items1-5">Vertical checkbox group</label>
+				<div class = "checkbox">
+					<label><input type = "checkbox" name = "items1-5" value = "Monday" checked/>Monday</label>
+				</div>
+				<div class = "checkbox">
+					<label><input type = "checkbox" name = "items1-5" value = "Wednesday"/>Wednesday</label>
+				</div>
+				<div class = "checkbox">
+					<label><input type = "checkbox" name = "items1-5" value = "Friday"/>Friday</label>
+				</div>
+			</div>
+<!-- dropdown list -->		
+			<div class = "form-group">
+				<label for = "items2">Select Day</label>
+				<select name = "items2" class = "form-control" >
+					<option name = "items2" value = "Monday">Monday</option>
+					<option name = "items2" value = "Wednesday">Wednesday</option>
+					<option name = "items3" value = "Friday">Friday</option>
+				</select>
+			</div>
+<!-- vertical radio buttons -->		
+			<div class = "form-group">
+				<label for = "items3">Vertical radio buttons</label>
+				<div class = "radio"><label><input type = "radio" name = "items3" value = "Monday"/>Monday</label></div>
+				<div class = "radio"><label><input type = "radio" name = "items3" value = "Wednesday"/>Wednesday</label></div>
+				<div class = "radio"><label><input type = "radio" name = "items3" value = "Friday"/>Friday</label></div>
+			</div>
+<!-- inline radio buttons -->		
+			<div class = "form-group">
+				<label for = "items3-5">Inline radio buttons</label>
+				<label class = "radio-inline"><input type = "radio" name = "items3-5" value = "Monday"/>Monday</label>
+				<label class = "radio-inline"><input type = "radio" name = "items3-5" value = "Wednesday"/>Wednesday</label>
+				<label class = "radio-inline"><input type = "radio" name = "items3-5" value = "Friday"/>Friday</label>
+			</div>
+<!-- textarea -->						
+			<div class = "form-group">
+				<label for = "items4">Enter some info</label>
+				<textarea class = "form-control" columns = "5" name = "items4" placeholder = "Enter some info here">Enter information:</textarea>
+			</div>
+<!-- submit button -->
+			<div class = "form-group">
+				<div class = "col-sm-9 col-sm-offset-3">
+				<input type = "submit" value = "Submit Now" class = "btn btn-default"/>
+				</div>
+			</div>
+<!-- reset button -->
+			<div class = "form-group">
+				<div class = "col-sm-9 col-sm-offset-3">
+				<input type = "reset" class = "btn btn-default">
+				</div>
+			</div>
+
+		</form>
+	</div>
+</body>
+</html>
