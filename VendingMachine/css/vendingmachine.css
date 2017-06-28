@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+}
+
+.items{
+    border-style: solid;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: lightsteelblue;
+}
+
+.item-index{
+    text-align: left;
+}
+
+hr {
+    border-top: 3px solid darkblue;
+}
+
+.outputs {
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.btn-first {
+    margin-bottom: 5px;
+}

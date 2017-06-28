@@ -1,0 +1,23 @@
+﻿@model Exercises.Models.Data.Course
+@{
+    ViewBag.Title = "AddCourse";
+}
+<div class="row">
+    <div class="col-xs-12">
+        <h2>Add Course</h2>
+        @Html.ActionLink("Return to list", "Courses", "Admin")
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        @using (Html.BeginForm("AddCourse", "Admin", FormMethod.Post))
+        {
+            <div class="form-group">
+                <label>Course name</label>
+                @Html.TextBoxFor(m => m.CourseName, new { @class = "form-control", placeholder="Course Name" })
+                <span class="text-danger">@Html.ValidationMessageFor(m => m.CourseName)</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Save</button>
+        }
+    </div>
+</div>

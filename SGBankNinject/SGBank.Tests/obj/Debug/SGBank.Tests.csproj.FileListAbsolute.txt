@@ -1,0 +1,14 @@
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.Tests.dll
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.Tests.pdb
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.BLL.dll
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.Data.dll
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.Models.dll
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.BLL.pdb
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.Data.pdb
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.Models.pdb
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Tests\obj\Debug\SGBank.Tests.csprojResolveAssemblyReference.cache
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Tests\obj\Debug\SGBank.Tests.dll
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Tests\obj\Debug\SGBank.Tests.pdb
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Tests\bin\Debug\SGBank.Tests.dll.config
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Tests\bin\Debug\nunit.framework.dll
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Tests\bin\Debug\nunit.framework.xml

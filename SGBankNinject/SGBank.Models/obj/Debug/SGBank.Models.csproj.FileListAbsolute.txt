@@ -1,0 +1,12 @@
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Models\bin\Debug\SGBank.Models.dll
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Models\bin\Debug\SGBank.Models.pdb
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Models\obj\Debug\SGBank.Models.csprojResolveAssemblyReference.cache
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Models\obj\Debug\SGBank.Models.dll
+C:\SGBitBucket\michele-lieske-individual-work\SGBank\SGBank.Models\obj\Debug\SGBank.Models.pdb
+C:\SGBitBucket\michele-lieske-individual-work\SGBankNinject\SGBank.Models\bin\Debug\SGBank.Models.dll
+C:\SGBitBucket\michele-lieske-individual-work\SGBankNinject\SGBank.Models\bin\Debug\SGBank.Models.pdb
+C:\SGBitBucket\michele-lieske-individual-work\SGBankNinject\SGBank.Models\bin\Debug\Ninject.dll
+C:\SGBitBucket\michele-lieske-individual-work\SGBankNinject\SGBank.Models\bin\Debug\Ninject.xml
+C:\SGBitBucket\michele-lieske-individual-work\SGBankNinject\SGBank.Models\obj\Debug\SGBank.Models.csprojResolveAssemblyReference.cache
+C:\SGBitBucket\michele-lieske-individual-work\SGBankNinject\SGBank.Models\obj\Debug\SGBank.Models.dll
+C:\SGBitBucket\michele-lieske-individual-work\SGBankNinject\SGBank.Models\obj\Debug\SGBank.Models.pdb

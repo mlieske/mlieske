@@ -1,0 +1,11 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+
+4,My Test Order4,MN,3.5,Wood,100,4.50,4,3,5.35,0,0
+4,My Test Order4,MN,3.5,Wood,100,4.50,4,3,5.35,0,0
+4,My Test Order4,MN,3.5,Wood,100,4.50,4,3,5.35,0,0
+4,My Test Order4,MN,3.5,Wood,100,4.50,4,3,5.35,0,0
+4,My Test Order4,MN,3.5,Wood,100,4.50,4,3,5.35,0,0
+4,My Test Order4,MN,3.5,Wood,100,4.50,4,3,5.35,0,0
+4,My Test Order4,MN,3.5,Wood,100,4.50,4,3,5.35,0,0
+4,My Test Order4,MN,3.5,Wood,100,4.50,4,3,5.35,0,0
+4,My Test Order4,MN,3.5,Wood,100,4.50,4,3,5.35,0,0

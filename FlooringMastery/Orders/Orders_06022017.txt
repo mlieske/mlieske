@@ -1,0 +1,4 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+5,Thursday Company,OH,6.25,Wood,250,5.15,4.75,1287.50,1187.50,154.687500,2629.687500
+6,My Company,MI,5.75,Wood,100,5.15,4.75,515.00,475.00,56.92,1046.92
+3,New customer name,OH,6.25,Carpet,200,2.25,2.10,450.00,420.00,54.38,924.38

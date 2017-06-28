@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vending Machine</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/vendingmachine.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+		<div class="container">
+			<h1>Vending Machine</h1>
+			<hr/>
+
+			<div class="row">
+				<div class = "col-xs-8">
+					<div class="row" id="allRows">
+					</div>
+				</div>
+
+
+				<div class="col-xs-4 outputs">
+					<form>
+					<div id="total-in">
+						<div class="row title">
+							Total $ In
+						</div>
+						<div class="row">
+							<div class="form-group">
+								<input type="text" name="totalIn" id="totalIn" class = "outputs" readonly>
+							</div>
+						</div>
+						<div class="row">
+							<button type="button" class = "btn btn-default btn-first" id="dollar">Add Dollar</button>
+							<button type="button" class = "btn btn-default btn-first" id="quarter">Add Quarter</button>
+						</div>
+						<div class="row">
+							<button type="button" class = "btn btn-default" id="dime">Add Dime</button>
+							<button type="button" class = "btn btn-default" id="nickel">Add Nickel</button>
+						</div>
+					</div>
+					<hr/>
+					<div id="messages">
+						<div class="row title">
+							Messages
+						</div>
+						<div class="form-group">
+							<input type="text" name="return-message" id="return-message" class="outputs" readonly>
+						</div>
+						<div class="form-group">
+							<label for="item-added">Item: </label>
+							<input type="text" name="item-added" id="item-added" size = "14" class = "outputs" readonly>
+						</div>
+						<div class="row">
+							<button type="button" class = "btn btn-default" id="purchase">Make Purchase</button>
+						</row>
+
+					</div>
+					<hr/>
+					<div id="changeArea">
+						<div class="row title">
+							Change
+						</div>
+						<div class="form-group">
+							<input type="text" name="change-returned" id="change-returned" class = "outputs" size="25" readonly>
+						</div>
+						<div class="row">
+							<button type="button" class = "btn btn-default" id="change-return">Change Return</button>
+						</row>
+					</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+		
+		<script src="js/jquery-2.2.4.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/home.js"></script>
+	</body>
+    
+</html>

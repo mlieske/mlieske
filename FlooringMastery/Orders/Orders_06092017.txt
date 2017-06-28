@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+1,Testing again,IN,6.00,Wood,800,5.15,4.75,4120.00,3800.00,475.20,8395.20

@@ -1,0 +1,5 @@
+C:\SGBitBucket\michele-lieske-individual-work\FlooringMastery\FlooringMastery.Models\bin\Debug\FlooringMastery.Models.dll
+C:\SGBitBucket\michele-lieske-individual-work\FlooringMastery\FlooringMastery.Models\bin\Debug\FlooringMastery.Models.pdb
+C:\SGBitBucket\michele-lieske-individual-work\FlooringMastery\FlooringMastery.Models\obj\Debug\FlooringMastery.Models.csprojResolveAssemblyReference.cache
+C:\SGBitBucket\michele-lieske-individual-work\FlooringMastery\FlooringMastery.Models\obj\Debug\FlooringMastery.Models.dll
+C:\SGBitBucket\michele-lieske-individual-work\FlooringMastery\FlooringMastery.Models\obj\Debug\FlooringMastery.Models.pdb
