@@ -10,3 +10,15 @@ C:\SGBitBucket\michele-lieske-individual-work\FlooringMastery\FlooringMastery.UI
 C:\SGBitBucket\michele-lieske-individual-work\FlooringMastery\FlooringMastery.UI\obj\Debug\FlooringMastery.UI.pdb
 C:\SGBitBucket\michele-lieske-individual-work\FlooringMastery\FlooringMastery.UI\bin\Debug\FlooringMastery.BLL.dll
 C:\SGBitBucket\michele-lieske-individual-work\FlooringMastery\FlooringMastery.UI\bin\Debug\FlooringMastery.BLL.pdb
+C:\SoftwareGuild\Repos\mlieske\FlooringMastery\FlooringMastery.UI\bin\Debug\FlooringMastery.UI.exe.config
+C:\SoftwareGuild\Repos\mlieske\FlooringMastery\FlooringMastery.UI\bin\Debug\FlooringMastery.UI.exe
+C:\SoftwareGuild\Repos\mlieske\FlooringMastery\FlooringMastery.UI\bin\Debug\FlooringMastery.UI.pdb
+C:\SoftwareGuild\Repos\mlieske\FlooringMastery\FlooringMastery.UI\bin\Debug\FlooringMastery.BLL.dll
+C:\SoftwareGuild\Repos\mlieske\FlooringMastery\FlooringMastery.UI\bin\Debug\FlooringMastery.Data.dll
+C:\SoftwareGuild\Repos\mlieske\FlooringMastery\FlooringMastery.UI\bin\Debug\FlooringMastery.Models.dll
+C:\SoftwareGuild\Repos\mlieske\FlooringMastery\FlooringMastery.UI\bin\Debug\FlooringMastery.BLL.pdb
+C:\SoftwareGuild\Repos\mlieske\FlooringMastery\FlooringMastery.UI\bin\Debug\FlooringMastery.Data.pdb
+C:\SoftwareGuild\Repos\mlieske\FlooringMastery\FlooringMastery.UI\bin\Debug\FlooringMastery.Models.pdb
+C:\SoftwareGuild\Repos\mlieske\FlooringMastery\FlooringMastery.UI\obj\Debug\FlooringMastery.UI.csprojResolveAssemblyReference.cache
+C:\SoftwareGuild\Repos\mlieske\FlooringMastery\FlooringMastery.UI\obj\Debug\FlooringMastery.UI.exe
+C:\SoftwareGuild\Repos\mlieske\FlooringMastery\FlooringMastery.UI\obj\Debug\FlooringMastery.UI.pdb
