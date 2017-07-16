@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVDRepoWebApi", "DVDRepoWebApi\DVDRepoWebApi.csproj", "{71FEFFFC-F2AB-4EE6-B3A8-F1D7184A2547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVDRepoWebApi.Tests", "DVDRepoWebApi.Tests\DVDRepoWebApi.Tests.csproj", "{2FFE8B7E-5B09-4968-BEB1-0C481E807070}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DvdRepoWebApi.Models", "DvdRepoWebApi.Models\DvdRepoWebApi.Models.csproj", "{BE208DEF-7913-48CD-8A26-6D9A18C0D5EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVDRepoWebApi.Data", "DVDRepoWebApi.Data\DVDRepoWebApi.Data.csproj", "{66C9AE60-F472-4E31-AEFA-CC314E3D67EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71FEFFFC-F2AB-4EE6-B3A8-F1D7184A2547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71FEFFFC-F2AB-4EE6-B3A8-F1D7184A2547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71FEFFFC-F2AB-4EE6-B3A8-F1D7184A2547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71FEFFFC-F2AB-4EE6-B3A8-F1D7184A2547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FFE8B7E-5B09-4968-BEB1-0C481E807070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FFE8B7E-5B09-4968-BEB1-0C481E807070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FFE8B7E-5B09-4968-BEB1-0C481E807070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FFE8B7E-5B09-4968-BEB1-0C481E807070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE208DEF-7913-48CD-8A26-6D9A18C0D5EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE208DEF-7913-48CD-8A26-6D9A18C0D5EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE208DEF-7913-48CD-8A26-6D9A18C0D5EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE208DEF-7913-48CD-8A26-6D9A18C0D5EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66C9AE60-F472-4E31-AEFA-CC314E3D67EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66C9AE60-F472-4E31-AEFA-CC314E3D67EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66C9AE60-F472-4E31-AEFA-CC314E3D67EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66C9AE60-F472-4E31-AEFA-CC314E3D67EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
