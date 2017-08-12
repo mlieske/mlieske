@@ -1,0 +1,33 @@
+﻿@model IEnumerable<SpaceBlog.UI.Models.AppUser>
+
+@{
+    ViewBag.Title = "GetUsers";
+}
+<style>
+    h2 {
+        color: aliceblue
+    }
+</style>
+<h2>View Users</h2>
+<div class="row">
+    <div class="jumbotron col-xs-12">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <td>User Name</td>
+                    <td>Remove User from All Roles</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in Model)
+                {
+                    <tr>
+                        <td>@Html.ActionLink(p.UserName, "EditUsers", "Account", new { id = p.UserName }, null)</td>
+                        <td>@Html.ActionLink("X", "Delete", "Account", new { id = p.UserName }, null)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

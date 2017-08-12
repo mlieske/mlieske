@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceBlog.UI", "SpaceBlog.UI\SpaceBlog.UI.csproj", "{AF4E0374-F1F4-4478-8EB0-01C793FCD1CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceBlog.Models", "SpaceBlog.Models\SpaceBlog.Models.csproj", "{49D7CE29-14FA-42DF-AA3F-8CA3C112371B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceBlog.Data", "SpaceBlog.Data\SpaceBlog.Data.csproj", "{6B9F09C9-2BEE-4467-9BEA-5E235C13A700}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceBlog.Tests", "SpaceBlog.Tests\SpaceBlog.Tests.csproj", "{3AA42FD8-9417-4FBE-8CCF-2D60D0396351}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF4E0374-F1F4-4478-8EB0-01C793FCD1CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF4E0374-F1F4-4478-8EB0-01C793FCD1CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF4E0374-F1F4-4478-8EB0-01C793FCD1CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF4E0374-F1F4-4478-8EB0-01C793FCD1CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49D7CE29-14FA-42DF-AA3F-8CA3C112371B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49D7CE29-14FA-42DF-AA3F-8CA3C112371B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49D7CE29-14FA-42DF-AA3F-8CA3C112371B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49D7CE29-14FA-42DF-AA3F-8CA3C112371B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B9F09C9-2BEE-4467-9BEA-5E235C13A700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B9F09C9-2BEE-4467-9BEA-5E235C13A700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B9F09C9-2BEE-4467-9BEA-5E235C13A700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B9F09C9-2BEE-4467-9BEA-5E235C13A700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AA42FD8-9417-4FBE-8CCF-2D60D0396351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AA42FD8-9417-4FBE-8CCF-2D60D0396351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AA42FD8-9417-4FBE-8CCF-2D60D0396351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AA42FD8-9417-4FBE-8CCF-2D60D0396351}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

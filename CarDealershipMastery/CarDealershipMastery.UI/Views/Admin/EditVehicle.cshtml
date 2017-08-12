@@ -1,0 +1,94 @@
+﻿@model CarDealershipMastery.UI.Models.VehicleEntryVM
+
+@{
+    ViewBag.Title = "EditVehicle";
+}
+
+<h2>EditVehicle</h2>
+<div class="container">
+    @using (Html.BeginForm("EditVehicle", "Admin", FormMethod.Post, new { enctype = "multipart/form-data", id = "frmAddListing" }))
+            {
+        @Html.HiddenFor(m => m.VehicleDetails.VehicleId);
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <label>Make</label>
+                    @Html.DropDownListFor(m => m.VehicleMake.MakeType, Model.AllMakes, "-Choose One-", new { @class = "form-control", id = "makeList" })
+                </div>
+                <div class="form-group">
+                    <label>Type</label>
+                    @Html.DropDownListFor(m => m.VehicleDetails.New, Model.AllTypes, "-Choose One-", new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Year</label>
+                    @Html.TextBoxFor(m => m.VehicleDetails.Year, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Color</label>
+                    @Html.DropDownListFor(m => m.VehicleDetails.ExtColorId, Model.AllExtColors, "-Choose One-", new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Mileage</label>
+                    @Html.TextBoxFor(m => m.VehicleDetails.Mileage, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>MSRP</label>
+                    @Html.TextBoxFor(m => m.VehicleDetails.MSRP, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <labael>Description</labael>
+                    @Html.TextAreaFor(m => m.VehicleDetails.Description, new { @class = "form-control" })
+                </div>
+                <div>
+                    @Html.ActionLink("Delete","DeleteVehicle","Admin", new { id = Model.VehicleDetails.VehicleId }, null)
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <label>Model</label>
+                    @Html.DropDownListFor(m => m.VehicleDetails.VModelId, Model.AllModels, "-Choose One-", new { @class = "form-control", id = "modelList" })
+                </div>
+                <div class="form-group">
+                    <label>BodyStyle</label>
+                    @Html.DropDownListFor(m => m.VehicleDetails.BodyStyleId, Model.AllBodyStyles, "-Choose One-", new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Transmission</label>
+                    @Html.DropDownListFor(m => m.VehicleDetails.TransTypeId, Model.AllTransTypes, "-Choose One-", new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Interior</label>
+                    @Html.DropDownListFor(m => m.VehicleDetails.IntColorId, Model.AllIntColors, "-Choose One-", new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Vin #</label>
+                    @Html.TextBoxFor(m => m.VehicleDetails.VIN, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Sale Price</label>
+                    @Html.TextBoxFor(m => m.VehicleDetails.Price, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>Featured</label>
+                    @Html.CheckBoxFor(m => m.VehicleDetails.Featured, new { @class = "form-control" })
+                </div>
+
+                <div class="form-group">
+                    <label>Select File: </label>
+                    <input id="ImageUpload" name="ImageUpload" type="file" class="form-control" />
+                </div>
+
+                <div>
+                    <img src="~/Website IMAGES/@Model.VehicleDetails.ImageName" width="200"/>
+                </div>
+
+                <button type="submit">Save</button>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+

@@ -1,0 +1,51 @@
+﻿@model SpaceBlog.Models.Post
+
+@{
+    ViewBag.Title = "Post";
+}
+
+<style>
+    h2 {
+        color: aliceblue;
+    }
+    body {
+        color:white;
+    }
+</style>
+<h2 style="text-align:center">View Post</h2>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-8">
+
+                <label>Post Title</label>
+                <div>
+                    @Model.PostTitle
+                </div><br />
+                <label>Post Body</label>
+                <div>
+                    @Html.Raw(Model.PostBody) 
+                </div><br />
+                <label>Expiration Date</label>
+                <div>
+                    @Model.ExpirationDate
+                </div><br />
+                <div>
+                    <div>
+                        <label>Tags:</label>
+                    </div>
+                    @foreach (var tag in Model.Tags)
+                    {
+
+                        @tag.TagName<span> </span>
+                    }
+                </div>
+            </div>
+            <div class="col-xs-3 col-xs-offset-1">
+                <img src="~/Website IMAGES/@Model.ImageFileName" width="200" />
+            </div>
+        </div>
+    </div>
+</div>
+
+

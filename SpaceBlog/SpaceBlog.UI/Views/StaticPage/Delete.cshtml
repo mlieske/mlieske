@@ -1,0 +1,16 @@
+﻿@model SpaceBlog.Models.StaticPage
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+@using (@Html.BeginForm("Delete", "StaticPage", FormMethod.Post))
+{
+    @Html.HiddenFor(m => m.StaticPageId)
+    <p>Are you sure you want to delete post @Model.StaticPageTitle?</p>
+    <button type="submit" class="btn btn-danger">Delete</button>
+    @Html.ActionLink("Cancel", "Pages", "Manage", null, new { @class = "btn btn-info" })
+}
+
+

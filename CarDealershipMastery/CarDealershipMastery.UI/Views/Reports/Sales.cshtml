@@ -1,0 +1,46 @@
+﻿@model CarDealershipMastery.UI.Models.SalesReportWithUsersVM
+@{
+    ViewBag.Title = "Sales";
+}
+
+<h2>Sales</h2>
+<div class="form-group">
+    <select id="user">
+        @foreach(var user in Model.AllUsers)
+        {
+            <option value="@user.UserName">@user.UserName</option>
+        }
+    </select>
+    <input type="date" id="startDate"/>
+    <input type="date" id="endDate"/>
+    <button type="button" id="search">Search</button>
+</div>
+
+
+
+<div class="row">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <td>User</td>
+                <td>Total Sales</td>
+                <td>Total Vehicles</td>
+            </tr>
+        </thead>
+        <tbody id="results">
+            @foreach (var p in Model.AllSalesReport)
+            {
+                <tr>
+                    <td>@p.Name</td>
+                    <td>@p.TotalSales.ToString("C")</td>
+                    <td>@p.TotalVehicles</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+
+

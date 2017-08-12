@@ -1,0 +1,76 @@
+﻿@using HtmlAgilityPack
+
+@model List<SpaceBlog.Models.Post>
+@{
+    ViewBag.Title = "Search";
+}
+
+<style>
+
+    table {
+        color:black
+    }
+    h2 {
+        color: aliceblue
+    }
+</style>
+<div class="jumbotron text-center">
+    <h1>Search</h1>
+</div>
+
+
+<form class="form-inline">
+    <ul id="errorMessage"></ul>
+    <div class="form-group">
+        <label for="searchBox"><h2>Search</h2></label>
+        <input class="form-control" id="searchBox">
+    </div>
+    <div class="form-group">
+        <select class="form-control" id="searchType" v-model="searchBlogCategory">
+            <option value="">Search Blog Category&nbsp;&nbsp;</option>
+            <option value="post">Post</option>
+            <option value="tags"> Tags</option>
+            <option value="username">UserName</option>
+        </select>
+    </div>
+    <button id="searchButton" type="submit" class="btn btn-default" v-on:click="search">Search</button>
+</form>
+
+
+<div class="container col-lg-12">
+    <div class="jumbotron">
+        <table id="searchTable" class="table table-hover">
+            <thead>
+                <tr>
+                    <td>Post Title</td>
+                    <td>Post Date</td>
+                    <td>Blog Excerpt</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in Model)
+                {
+                    HtmlDocument htmlDoc = new HtmlDocument();
+                    htmlDoc.LoadHtml(p.PostBody);
+                    string result = htmlDoc.DocumentNode.InnerText;
+                    <tr>
+                        <td>@Html.ActionLink(p.PostTitle, "Index", "Post", new { id = p.PostId }, null)</td>
+                        <td>@p.CreationDate.ToShortDateString()</td>
+                        @if (result == null)
+                        {
+                            <td></td>
+                        }
+                        else if (result.Length < 10)
+                        {
+                            <td>@result</td>
+                        }
+                        else
+                        {
+                            <td>@result.Substring(0, 10)...</td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

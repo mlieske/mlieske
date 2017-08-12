@@ -1,0 +1,80 @@
+﻿@model CarDealershipMastery.UI.Models.DetailsVM 
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<div class="container">
+    <div style="border: solid">
+        <div class="row">
+            <div class="col-xs-12">
+                @Model.VehicleDetails.Year
+                @Model.VehicleMake.MakeType
+                @Model.VehicleDetails.VehicleModelId.ModelType
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">
+                <div>
+                    <img src="~/Images/vehicle1.jpg" width="170" />
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div>
+                    <label>Body Style: </label>
+                    @Model.VehicleDetails.VehicleBodyStyle.BodyStyleType
+                </div>
+                <div>
+                    <label>Trans: </label>
+                    @Model.VehicleDetails.VehicleTrans.TransTypeName
+                </div>
+                <div>
+                    <label>Color: </label>
+                    @Model.VehicleDetails.VehicleExtColor.ExtColorName
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div>
+                    <label>Interior: </label>
+                    @Model.VehicleDetails.VehicleIntColor.IntColorName
+                </div>
+                <div>
+                    <label>Mileage: </label>
+                    @Model.VehicleDetails.Mileage
+                </div>
+                <div>
+                    <label>VIN: </label>
+                    @Model.VehicleDetails.VIN
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div>
+                    <label>Sale Price: </label>
+                    @Model.VehicleDetails.Price.ToString("C")
+                </div>
+                <div>
+                    <label>MSRP: </label>
+                    @Model.VehicleDetails.MSRP.ToString("C")
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-9 col-sm-offset-3">
+                <label>Description</label>
+                @Model.VehicleDetails.Description
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-10">
+                @using (Html.BeginForm("ContactUs","Home", FormMethod.Get))
+                {
+                    @Html.HiddenFor(m => m.VehicleDetails.VIN)
+                    @*@Html.TextBoxFor(m => m.VehiclePrice, new { @class = "form-control" })*@
+                    <button type="submit">Contact Us</button>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+

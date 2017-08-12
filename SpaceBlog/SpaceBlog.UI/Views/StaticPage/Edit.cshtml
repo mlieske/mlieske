@@ -1,0 +1,58 @@
+﻿@model SpaceBlog.UI.Models.StaticPagesViewModel
+@{
+    ViewBag.Title = "Edit";
+}
+<style>
+    label {
+        color: black
+    }
+
+    h2 {
+        color: aliceblue
+    }
+</style>
+<div class="row">
+    <div class=" jumbotron col-xs-12">
+        <div class="row">
+            @using (Html.BeginForm(Model.StaticPageExists ? "Edit" : "Add", "StaticPage", FormMethod.Post, new { enctype = "multipart/form-data", id = "frmAddListing" }))
+
+            {
+                <div class="col-xs-5">
+                    @Html.HiddenFor(m => m.StaticPagetoView.StaticPageId)
+                    @Html.HiddenFor(m => m.StaticPagetoView.ImageFileName)
+                    <div class="form-group form-inline">
+                        <label>Page Title</label>
+                        @Html.TextBoxFor(m => m.StaticPagetoView.StaticPageTitle, new { @class = "form-control", style = "width: 400px;" })
+                    </div>
+                    <div class="form-group form-inline">
+                        <label>Page Body</label>
+                        @Html.HiddenFor(m => m.StaticPagetoView.StaticPageBody, new { @class="form-control", style = "width: 400px;", @id= "subject" })
+                        @Html.HiddenFor(m => m.StaticPagetoView.StaticPageBody, new { @class = "form-control", style = "width: 400px;", @id = "bodyPost" })
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="form-group form-inline">
+                    </div>
+                    <div class="form-group">
+                        <label>Picture</label>
+                        <input id="ImageUpload" name="ImageUpload" type="file" class="form-control" />
+                    </div>
+                </div>
+
+                <div><button type="submit" class="button button-primary" id="saveChanges">Save Changes</button></div>
+
+
+                if (Model.StaticPagetoView != null && Model.StaticPagetoView.ImageFileName != null)
+                {
+                    <div class="col-xs-3">
+                        <img src="~/Website IMAGES/@Model.StaticPagetoView.ImageFileName" width="200"/>
+                    </div>
+                }
+
+
+
+            }
+        </div>
+    </div>
+</div>
+

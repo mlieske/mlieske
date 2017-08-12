@@ -1,0 +1,31 @@
+﻿@model CarDealershipMastery.UI.Models.NewMakeVM
+
+@{
+    ViewBag.Title = "Makes";
+}
+
+<h2>Makes</h2>
+<div class="container">
+    <div class="row" style="border:solid">
+        @using (Html.BeginForm())
+        {
+            <div class="form-group form-inline">
+                @Html.TextBoxFor(m => m.NewMake.MakeType, new { @class = "form-control" })
+                <button type="submit">Save</button>
+            </div>
+        }
+    </div>
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr><td>Current Makes</td></tr>
+            </thead>
+            @foreach(var make in Model.AllMakes)
+            {
+                <tr>
+                    <td>@make.MakeType</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

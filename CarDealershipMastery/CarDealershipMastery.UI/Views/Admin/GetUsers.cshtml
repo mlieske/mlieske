@@ -1,0 +1,36 @@
+﻿@model IEnumerable<CarDealershipMastery.UI.Models.UpdateAccountViewModel>
+
+    @{
+        ViewBag.Title = "GetUsers";
+    }
+
+    <h2>Users</h2>
+    @Html.ActionLink("Add a new user","AddUser","Admin")
+    <div class="row">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <td>Last Name</td>
+                    <td>First Name</td>
+                    <td>Email</td>
+                    <td>Role</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in Model)
+                {
+                    <tr>
+                        <td>@p.LastName</td>
+                        <td>@p.FirstName</td>
+                        <td>@p.EmailAddress</td>
+                        <td>@p.UserRole</td>
+                        <td>@Html.ActionLink("Edit", "EditUsers", "Admin", new { id = p.UserName }, null)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+
+

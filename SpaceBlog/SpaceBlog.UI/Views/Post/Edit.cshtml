@@ -1,0 +1,136 @@
+﻿@model SpaceBlog.UI.Models.PostTagsViewModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+
+<style>
+    label {
+        color: black
+    }
+    h2 {
+        color: aliceblue
+    }
+</style>
+
+@if (Model.PostExists == true)
+{
+    <h2 style="text-align:center">Edit Post</h2>
+}
+else
+{
+    <h2 style="text-align:center">Add Post</h2>
+
+}
+<div class="row">
+    <div class=" jumbotron col-xs-12">
+        <div class="row">
+            @using (Html.BeginForm(Model.PostExists ? "Edit" : "Add", "Post", FormMethod.Post, new { enctype = "multipart/form-data", id = "frmAddListing" }))
+
+            {
+                <div class="col-xs-5">
+                    @Html.HiddenFor(m => m.PostToView.PostId)
+                    @Html.HiddenFor(m => m.PostToView.UserId)
+                    @*@Html.HiddenFor(m => m.PostToView.Tags)*@
+                    @Html.HiddenFor(m => m.PostToView.ImageFileName)
+                    <div class="form-group form-inline">
+                        <label>Post Title</label>
+                        @Html.TextBoxFor(m => m.PostToView.PostTitle, new { @class = "form-control", style = "width: 400px;" })
+                    </div>
+                    <div class="form-group form-inline">
+                        <label>Post Body</label>
+                        @Html.HiddenFor(m => m.PostToView.PostBody, new { @class="form-control", style = "width: 400px;", @id= "subject" })
+                        @Html.HiddenFor(m => m.PostToView.PostBody, new { @class = "form-control", style = "width: 400px;", @id = "bodyPost" })
+
+                    </div>
+                    <div class="form-group form-inline">
+                        <label>Expiration Date</label>
+                        @Html.TextBoxFor(m => m.PostToView.ExpirationDate, new { @class = "form-control", style = "width: 350px;" })
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="form-group form-inline">
+                        <label>Tag:</label>
+                        <input type="text" id="newTag"/>
+                        <button class="button" id="addTag">Add Tag</button>
+                    </div>
+                    <div class="form-group form-inline">
+                    </div>
+                    <div class="border" >
+                        All Tags:
+                        <div>
+                            <div id="allTags">
+                                @Html.EditorFor(x => x.AllTags)
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Picture</label>
+                        <input id="ImageUpload" name="ImageUpload" type="file" class="form-control" />
+                    </div>
+                </div>
+
+                <div><button type="submit" class="button button-primary" id="saveChanges">Save Changes</button></div>
+
+
+                if (Model.PostToView != null && Model.PostToView.ImageFileName != null)
+                {
+                <div class="col-xs-3">
+                    <img src="~/Website IMAGES/@Model.PostToView.ImageFileName" width="200"/>
+                </div>
+                }
+
+
+
+            }
+        </div>
+    </div>
+</div>
+
+@section SavePostScript
+{
+    <script src="@Url.Content("~/Scripts/SavePostScript.js")"></script>
+    <script src="~/Scripts/tinymce/tinymce.min.js"></script>
+    <script>
+        tinyMCE.init({
+
+            selector: "#subject",
+            setup: function(editor) {
+                editor.on('change',
+                    function() {
+                        editor.save();
+                    });
+            }
+            
+            
+        });
+
+    </script>
+}
+
+
+       
+@* this was the old image display - didn't upload anything
+    <div class="col-xs-3 col-xs-offset-1">
+        <img src="~/Website IMAGES/Brad.jpg" width="200" />
+        <div>Replace Image</div>
+        <form action="/action_page.php">
+            <input type="file" name="pic" accept="image/*">
+            <input type="submit">
+        </form>
+        <div><button class="button button-primary" id="saveChanges">Save Changes</button></div>
+    </div>*@
+    @*<script type="text/javascript">
+    $('#addTag').on('click', '.itemclick',function () {
+        alert('clicked');
+        //var newTag = $('#newTag').val();
+        //$('#allTags').append(newTag);
+    });
+</script>*@
+
+
+
+
+

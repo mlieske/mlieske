@@ -1,0 +1,171 @@
+﻿@using System.Web.UI.WebControls.Expressions
+@using SpaceBlog.Data.Repositories
+@model  SpaceBlog.Models.ViewModels.ListTopTagsViewModel
+@{
+    ViewBag.Title = "Home";
+}
+
+
+
+<style>
+    #carouselimg2 {
+        width: 900px;
+        height: 500px;
+        
+            
+        
+    }
+    #myCarousel {
+        width: 900px;
+        height: 500px;
+    }
+
+    .row img{
+        width: 100%;
+        height: 100%
+    }
+
+    .row{
+        color: black;
+    }
+    p{
+        color: black;
+    }
+
+
+</style>
+
+
+<div class=" jumbotron col-xs-2 row">
+        <aside>
+            <table class="hover table-hover">
+                <thead>
+                <tr><td><h3>Most Popular Tags For Posts</h3></td></tr>
+                </thead>
+                <tbody>
+                @foreach (var p in Model.Tags)
+                {
+                    <tr>
+                        
+                        <td>@Html.ActionLink(p.TagName, "PostTag", "Search", new {id = p.TagName}, null)</td>
+                        <td>
+                            <p></p></td>
+
+                    </tr>
+                }
+
+                </tbody>
+            </table>
+
+        </aside>
+    </div>
+    <div class="panel_wrapper">
+
+        <div class="col-xs-10">
+            <div id="content" class="body-content">
+                <div class="jumbotron text-center">
+                    <h1>SpaceBlog</h1>
+                </div>
+
+
+                <!-- Creating Carousel Below -->
+
+                <div id="myCarousel" class="carousel active" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div id="carouselimg1" class="item active">
+                            <a href="">
+                                <img src="~/Website IMAGES/Spaceblog1.jpg" width="900" height="600" alt="Spaceblog1" />
+                            </a>
+                        </div>
+                        <div id="carouselimg2" class="item">
+                            <a href="">
+                                <img src="~/Website IMAGES/Spaceblog2.jpg" width="900" height="600" alt="Spaceblog2">
+                            </a>
+                        </div>
+                        <div id="carouselimg3" class="item">
+                            <a href="">
+                                <img src="~/Website IMAGES/Spaceblog3.jpg" width="900" height="600" alt="Spaceblog3">
+                            </a> 
+                        </div>
+                        <div id="carouselimg4" class="item">
+                            <a href="">
+                                <img src="~/Website IMAGES/SpaceJam.jpg" width="900" height="600" alt="SpaceJam">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <!-- Creating Carousel Above -->
+
+                <div class="container col-lg-12">
+                    <div class="jumbotron text-center">
+                        <h1>Blog Post Information</h1>
+
+                        <div class="row">
+                            @foreach( var p in Model.Posts)
+                            {
+                                <div class="parent">
+                                    <img src="~/Website IMAGES/@p.ImageFileName" id="image"/>
+                                    <h2>@p.PostTitle </h2><br />
+                                    @p.CreationDate.ToShortDateString();
+                                    <p>@Html.Raw(p.PostBody)</p>
+                                    @(string.Join(" ", p.Tags.Select(t => t.TagName).ToArray()) )
+                                </div>
+                            }
+                        </div>
+                        @*<table  class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <td>User</td>
+                                    <td>Title</td>
+                                    <td>Body</td>
+                                    <td>Created</td>
+                                    <td>Expires</td>
+                                    <td>Tags</td>
+                                    <td>Image</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var p in Model.Posts.OrderByDescending(p => p.CreationDate))
+                                {
+                                    <tr>
+                                        <td>@p.UserId</td>
+                                        <td>@Html.ActionLink(p.PostTitle, "", "Home", new { id = p.PostId }, null)</td>
+                                        <td>@p.PostBody</td>
+                                        <td>@p.CreationDate.ToShortDateString()</td>
+                                        <td>@p.ExpirationDate.ToShortDateString()</td>
+                                        <td>@("_" + string.Join(" ", p.Tags.Select(t => t.TagName).ToArray()) )</td>
+                                        <td><img src="@p.ImageFileName" /></td>
+
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+   

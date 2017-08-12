@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Scripts/css/Home.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <style>
+        /* Change the link color on hover */
+        .active {
+            background-color: black;
+            color: white;
+        }
+
+        #allTags {
+            background-color: aliceblue;
+        }
+
+        #navbar-brand.text {
+            color: black
+        }
+
+        #table-hover {
+        }
+
+        .dropdown:hover {
+            display: block;
+            color: black;
+        }
+
+        label {
+            color: aliceblue
+        }
+
+        h2, h5, h6, p {
+            font-family: "Oswald";
+            color: black;
+        }
+
+        td {
+            color: black
+        }
+
+        body {
+            background-image: url('../../Website IMAGES/gDQ07db.png');
+            background-attachment: fixed;
+            font-family: "Open Sans";
+        }
+
+        #jtron.jumbotron {
+            background-color: black
+        }
+
+        p, h4 {
+            color: aliceblue
+        }
+
+        .taglist{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <ul class="nav navbar-nav">
+                    <li>
+                        @Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    </li>
+                    <li>
+                    </li>
+                    <li>
+                        @Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("Contact Us", "ContactUs", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("Search", "Index", "Search", new { area = "" }, new { @class = "navbar-brand" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("Other", "List", "StaticPage", new { area = "" }, new { @class = "navbar-brand" })
+                    </li>
+                    
+
+
+
+
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
+                    {
+                        <li class="dropdown " data-dropdown="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                Admin<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu " role="menu">
+                                <li>@Html.ActionLink("Manage Posts", "Posts", "Manage", new { area = "" }, new { @class = "navbar-brand" })</li>
+                                <li>@Html.ActionLink("Manage Pages", "Pages", "Manage", new { area = "" }, new { @class = "navbar-brand" })</li>
+                                <li>@Html.ActionLink("Manage Users", "GetUsers", "Manage", new { area = "" }, new { @class = "navbar-brand" })</li>
+                                <li>@Html.ActionLink("Create Posts", "Add", "Post", new { area = "" }, new { @class = "navbar-brand" })</li>
+                                <li>@Html.ActionLink("Create Pages", "Add", "StaticPage", new { area = "" }, new { @class = "navbar-brand" })</li>
+                                <li>@Html.ActionLink("Create Users", "Index", "Account", new { area = "" }, new { @class = "navbar-brand" })</li>
+                            </ul>
+                        </li>
+                    }
+                    else if (User.Identity.IsAuthenticated && User.IsInRole("contributor"))
+                    {
+                        <li class="dropdown" data-dropdown="dropdown">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                Actions<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>@Html.ActionLink("Create Posts", "Add", "Post", new { area = "" }, new { @class = "navbar-brand" })</li>
+                                <li>@Html.ActionLink("Manage Posts", "Posts", "Manage", new { area = "" }, new { @class = "navbar-brand" })</li>
+                            </ul>
+                        </li>
+                    }
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse">
+
+                @Html.Partial("_Login")
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/home.js"></script>
+    <script src="~/Scripts/tinymce/tinymce.min.js"></script>
+    <script>
+        tinyMCE.init({
+
+            selector: "#subject",
+            setup: function (editor) {
+                editor.on('change',
+                    function () {
+                        editor.save();
+                    });
+            }
+            
+
+        });
+
+    </script>
+    @RenderSection("SavePostScript", false/*required*/)
+</body>
+</html>

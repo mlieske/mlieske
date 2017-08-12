@@ -1,0 +1,60 @@
+﻿@model CarDealershipMastery.UI.Models.UpdateAccountViewModel
+
+@{
+    ViewBag.Title = "AddUser";
+}
+
+<h2>AddUser</h2>
+<div class="col-xs-12">
+    @using (Html.BeginForm("AddUser", "Admin", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <label>User Name</label>
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label>First Name</label>
+                    @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                </div>
+
+                <div class="form-group">
+                    <label>Last Name</label>
+                    @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+                </div>
+
+            </div>
+
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <label>Password</label>
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control loginPassword" })
+                </div>
+
+                <div class="form-group">
+                    <label>Roles</label>
+                    @Html.DropDownListFor(m => m.UserRole, Model.Roles, new { @class = "form-control" })
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address</label>
+                    @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control" })
+                </div>
+
+                <div class="form-group">
+                    <div>
+                        <input type="submit" value="Create Account" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @Html.HiddenFor(m => m.UserId, new { @class = "form-control" })
+
+
+    }
+
+
+</div>
+

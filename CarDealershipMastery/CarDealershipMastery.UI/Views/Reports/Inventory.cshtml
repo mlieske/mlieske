@@ -1,0 +1,71 @@
+﻿@model List<CarDealershipMastery.UI.Models.InventoryReportVM>
+
+@{
+    ViewBag.Title = "Inventory";
+}
+
+<h2>Inventory</h2>
+
+<div class="container">
+    <div class="row">
+        <table class="table table-hover">
+            <thead>
+                <tr>New</tr>
+                <tr>
+                    <td>Year</td>
+                    <td>Make</td>
+                    <td>Model</td>
+                    <td>Count</td>
+                    <td>Stock Value</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in Model)
+            {
+                if (p.New == true)
+                {
+                        <tr>
+                            <td>@p.Year</td>
+                            <td>@p.Make</td>
+                            <td>@p.Model</td>
+                            <td>@p.Count</td>
+                            <td>@p.StockValue.ToString("C")</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <table class="table table-hover">
+            <thead>
+                <tr>Used</tr>
+                <tr>
+                    <td>Year</td>
+                    <td>Make</td>
+                    <td>Model</td>
+                    <td>Count</td>
+                    <td>Stock Value</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in Model)
+            {
+                if (p.New == false)
+                {
+                        <tr>
+                            <td>@p.Year</td>
+                            <td>@p.Make</td>
+                            <td>@p.Model</td>
+                            <td>@p.Count</td>
+                            <td>@p.StockValue.ToString("C")</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

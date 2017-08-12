@@ -1,0 +1,25 @@
+﻿@using Microsoft.AspNet.Identity
+
+@{
+    ViewBag.Title = "ViewAccount";
+}
+
+<style>h2 {
+     color: aliceblue
+ }</style>
+<h2>View @User.Identity.GetUserName() Account</h2>
+<div class="jumbotron">
+    <div class="col-xs-8">
+        <table>
+            <thead>
+            <tr>@User.Identity.AuthenticationType</tr><br />
+            <tr>@User.Identity.IsAuthenticated</tr><br />
+                
+            </thead>
+        </table>
+    </div>
+    <div class="col-xs-4">
+
+    </div>
+</div>
+

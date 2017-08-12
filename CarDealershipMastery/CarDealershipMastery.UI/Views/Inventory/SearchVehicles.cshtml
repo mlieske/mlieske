@@ -1,0 +1,67 @@
+﻿@model CarDealershipMastery.UI.Models.SearchType
+
+@{
+    ViewBag.Title = "SearchVehicles";
+}
+
+<h2>Search <span id="getType">@Model.SearchCategory</span> Vehicles</h2>
+@if (Model.SearchCategory == "New")
+{
+    <div id="searchType" style="display:none">New</div>
+}
+else if (Model.SearchCategory == "Used")
+{
+    <div id="searchType" style="display:none">Used</div>
+}
+else
+{
+    <div id="searchType" style="display:none">Both</div>
+}
+<div class="container">
+@if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
+{
+    @Html.ActionLink("Add Vehicle", "Add", "Admin")
+    <div id="buttonType", style="display:none">Admin</div>
+}
+else if (User.Identity.IsAuthenticated && User.IsInRole("sales"))
+{
+    <div id="buttonType" , style="display:none">Sales</div>
+}
+else
+{
+    <div id="buttonType",style ="display:none">Anonymous</div>
+}
+
+
+
+    <div style="border:solid">
+            @*<div class="row">*@
+                <div class="col-xs-12">
+                    Quick Search
+                </div>
+            @*</div>*@
+        @*<div class="row">
+            <div class="col-xs-12">*@
+                @*<div class="row">*@
+                <div class="form-group">
+                    <input type="text" name="searchString" id="searchString" placeholder="Enter make, model or year"/>
+                    <label>Price: </label>
+                    <input type="number" name="minPrice" id="minPrice" placeholder="No Min" value="0"/>
+                    <input type="number" name="maxPrice" id="maxPrice" placeholder="No Max" value="300000"/>
+                    <label>Year: </label>
+                    <input type="number" name="minYear" id="minYear" placeholder="No Min" value="0"/>
+                    <input type="number" name="maxYear" id="maxYear" placeholder="No Max" value="2050"/>
+                </div>
+                @*</div>*@
+            @*</div>
+            <div class="row">*@
+                <button type="button" id="searchButton">Search</button>
+            @*</div>
+        </div>*@
+        @*}*@
+       <br /><br />
+    </div>
+    <div id="searchResults">
+    </div>
+
+</div>

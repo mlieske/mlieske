@@ -1,0 +1,22 @@
+﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Http;
+using System.Web.Mvc;
+using System.Web.Routing;
+
+namespace SpaceBlog.UI
+{
+    public class MvcApplication : System.Web.HttpApplication
+    {
+        protected void Application_Start()
+        {
+            AreaRegistration.RegisterAllAreas();
+            System.Web.Http.GlobalConfiguration.Configure(RouteConfig.RegisterWebApi);
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            GlobalConfiguration.Configuration.Formatters.JsonFormatter.S‌​erializerSettings.Re‌​ferenceLoopHandling = ReferenceLoopHandling.Ignore;
+        }
+    }
+}

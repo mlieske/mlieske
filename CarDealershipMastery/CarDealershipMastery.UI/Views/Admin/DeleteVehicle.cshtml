@@ -1,0 +1,14 @@
+﻿@model CarDealershipMastery.Models.TableModels.Vehicle
+
+@{
+    ViewBag.Title = "DeleteVehicle";
+}
+
+<h2>DeleteVehicle</h2>
+@using (@Html.BeginForm("DeleteVehicle", "Admin", FormMethod.Post))
+{
+    @Html.HiddenFor(m => m.VehicleId)
+    <p>Are you sure you want to delete vehicle @Model.VehicleId?</p>
+    <button type="submit" class="btn btn-danger">Delete</button>
+    @Html.ActionLink("Cancel", "Vehicles", "Admin", null, new { @class = "btn btn-info" })
+}

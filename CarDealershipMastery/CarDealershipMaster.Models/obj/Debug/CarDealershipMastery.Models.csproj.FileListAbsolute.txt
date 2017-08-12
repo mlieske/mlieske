@@ -1,0 +1,14 @@
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Models\bin\Debug\CarDealershipMaster.Models.dll.config
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Models\bin\Debug\CarDealershipMaster.Models.dll
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Models\bin\Debug\CarDealershipMaster.Models.pdb
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Models\bin\Debug\EntityFramework.dll
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Models\bin\Debug\EntityFramework.xml
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Models\obj\Debug\CarDealershipMaster.Models.Migrations.init.resources
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Models\obj\Debug\CarDealershipMaster.Models.Migrations.makevehiclenullableincontact.resources
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Models\obj\Debug\CarDealershipMaster.Models.Migrations.removedpricevehicle.resources
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Models\obj\Debug\CarDealershipMaster.Models.Migrations.removedprice.resources
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Models\obj\Debug\CarDealershipMastery.Models.csproj.GenerateResource.Cache
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Models\obj\Debug\CarDealershipMaster.Models.dll
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Models\obj\Debug\CarDealershipMaster.Models.pdb

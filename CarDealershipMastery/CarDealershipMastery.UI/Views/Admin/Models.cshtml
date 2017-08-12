@@ -1,0 +1,38 @@
+﻿@model CarDealershipMastery.UI.Models.NewModelVM
+
+@{
+    ViewBag.Title = "Models";
+}
+
+<h2>Models</h2>
+<div class="container">
+    <div class="row" style="border:solid">
+        @using (Html.BeginForm())
+        {
+            <div class="form-group form-inline">
+                @Html.TextBoxFor(m => m.NewModel.ModelType, new { @class = "form-control" })
+                @Html.DropDownListFor(m => m.NewModel.MakeId, Model.AllMakes, new { @class = "form-control" })
+                <button type="submit">Save</button>
+            </div>
+        }
+    </div>
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>Current Models</td>
+                    <td>Make</td>
+                </tr>
+            </thead>
+            @foreach (var make in Model.AllModels)
+            {
+                <tr>
+                    <td>@make.ModelType</td>
+                    <td>@make.ModelMake.MakeType</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+
+

@@ -1,0 +1,27 @@
+﻿@model List<SpaceBlog.Models.StaticPage>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+<div class="row">
+    <div class="jumbotron col-xs-12">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <td>Page Title</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in Model)
+                {
+                    <tr>
+                        <td>@Html.ActionLink(p.StaticPageTitle, "SPView", "StaticPage", new { id = p.StaticPageId }, null)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

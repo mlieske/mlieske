@@ -1,0 +1,7 @@
+﻿@model SpaceBlog.UI.Models.CheckBoxListItem
+
+
+@Html.HiddenFor(x => x.TagId)
+@Html.CheckBoxFor(x => x.IsChecked)
+@Html.LabelFor(x => x.IsChecked, Model.TagName)
+<br />  

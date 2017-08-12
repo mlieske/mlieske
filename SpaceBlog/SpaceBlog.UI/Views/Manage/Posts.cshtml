@@ -1,0 +1,48 @@
+﻿@model IEnumerable<SpaceBlog.Models.Post>
+
+@{
+    ViewBag.Title = "Posts";
+}
+<style>
+    h2 {
+        color: aliceblue
+    }
+</style>
+<h2>Manage Posts</h2>
+<div class="row">
+    <div class="jumbotron col-xs-12">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <td>Post Title</td>
+                    <td>Post Date</td>
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
+                    {
+                        <td>Created By</td>
+                        <td>Approve</td>
+                    }
+                    <td>Approval Status</td>
+                    <td>Delete</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in Model)
+                {
+                    <tr>
+                        <td>@Html.ActionLink(p.PostTitle, "Edit", "Post", new { id = p.PostId }, null)</td>
+                        <td>@p.CreationDate</td>
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("admin"))
+                        {
+                            <td>@p.UserId</td>
+                            <td>@Html.ActionLink("X", "Approve", "Post", new { id = p.PostId }, null)</td>
+                        }
+                        <td>@p.ApprovalStatus</td>
+                        <td>@Html.ActionLink("X", "Delete", "Post", new { id = p.PostId }, null)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

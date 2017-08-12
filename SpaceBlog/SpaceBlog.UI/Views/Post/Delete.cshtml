@@ -1,0 +1,21 @@
+﻿@model SpaceBlog.Models.Post
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<style>
+    h2 {
+        color: aliceblue
+    }
+</style>
+<h2>Delete</h2>
+@using (@Html.BeginForm("Delete", "Post", FormMethod.Post))
+{
+    @Html.HiddenFor(m => m.PostId)
+    <p>Are you sure you want to delete post @Model.PostTitle?</p>
+    <button type="submit" class="btn btn-danger">Delete</button>
+    @Html.ActionLink("Cancel", "Posts", "Manage", null, new { @class = "btn btn-info" })
+}
+
+

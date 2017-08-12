@@ -1,0 +1,47 @@
+﻿@model SpaceBlog.UI.Models.UpdateAccountViewModel
+@{
+    ViewBag.Title = "EditUsers";
+}
+
+<style>
+    h2 {
+        color: aliceblue
+    }
+</style>
+<h2>EditUsers</h2>
+
+<div class="col-xs-6">
+    @using (Html.BeginForm("EditUsers", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
+        @Html.HiddenFor(m => m.UserId, new { @class = "form-control" })
+        <div class="form-group">
+            <label>User Name</label>
+            @Html.TextBoxFor(m=>m.UserName, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <label>Roles</label>
+            @if (Model.UserRole == null)
+            {
+                @Html.DropDownListFor(m => m.UserRole, Model.Roles, "-Select Role-", new { @class = "form-control" })
+            }
+            else
+            {
+            @Html.DropDownListFor(m => m.UserRole, Model.Roles, new { @class = "form-control" })
+            }
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            @Html.TextBoxFor(m => m.EmailAddress, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save Changes" class="btn btn-default" />
+            </div>
+        </div>
+    }
+
+
+</div>

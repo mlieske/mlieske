@@ -1,0 +1,13 @@
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Data\bin\Debug\CarDealershipMaster.Data.dll.config
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Data\bin\Debug\CarDealershipMaster.Data.dll
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Data\bin\Debug\CarDealershipMaster.Data.pdb
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Data\bin\Debug\CarDealershipMaster.Models.dll
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Data\bin\Debug\EntityFramework.dll
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Data\bin\Debug\CarDealershipMaster.Models.pdb
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Data\bin\Debug\CarDealershipMaster.Models.dll.config
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Data\bin\Debug\EntityFramework.xml
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Data\obj\Debug\CarDealershipMastery.Data.csprojResolveAssemblyReference.cache
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Data\obj\Debug\CarDealershipMaster.Data.dll
+C:\SGBitBucket\michele-lieske-individual-work\CarDealershipMastery\CarDealershipMaster.Data\obj\Debug\CarDealershipMaster.Data.pdb

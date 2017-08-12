@@ -1,0 +1,30 @@
+﻿@model List<CarDealershipMastery.Models.TableModels.Special>
+
+
+@{
+    ViewBag.Title = "Specials";
+}
+
+<h2>Specials</h2>
+<div class="contaier">
+    <div class="row">
+        <div class="col-xs-3">
+            <div>
+                <img src="~/Images/DollarSign.png" width="80" />
+            </div>
+        </div>
+        <div class="col-xs-9">
+            @foreach(var special in Model)
+            {
+                <div style="border:solid; margin: 10px">
+                    <div>
+                        @special.SpecialTitle
+                    </div>
+                    <div>
+                        @special.SpecialText
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
